@@ -1,0 +1,30 @@
+{
+  "name": "edie-homepage",
+  "version": "1.0.0",
+  "description": "<!-- Please update value in the {}  -->",
+  "main": "index.js",
+  "scripts": {
+    "style": "npx sass --watch src/sass/main.scss src/sass/style.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cyber-Kira/edie-homepage.git"
+  },
+  "keywords": [
+    "landing-page"
+  ],
+  "author": "Cyber-Kira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Cyber-Kira/edie-homepage/issues"
+  },
+  "homepage": "https://github.com/Cyber-Kira/edie-homepage#readme",
+  "dependencies": {
+    "sass": "^1.49.8"
+  },
+  "devDependencies": {
+    "webpack": "^5.69.1",
+    "webpack-cli": "^4.9.2"
+  }
+}
