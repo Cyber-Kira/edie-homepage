@@ -2,6 +2,10 @@
 
 h1 {
   @include font($size: 24px, $height: 36px);
+
+  @include media-laptop {
+    @include font($size: 48px, $height: 72px);
+  }
 }
 
 // LOGO
@@ -9,12 +13,26 @@ h1 {
 .logo {
   @extend %font-logo;
   @include font($size: 24px, $height: 35px, $weight: 800);
+
+  @include media-laptop {
+    @include font($size: 36px, $height: 53px, $weight: 800);
+  }
 }
 
 // NAVIGATION
 
 .navigation {
   @include font($size: 18px, $height: 36px, $weight: 400);
+
+  @include media-laptop {
+    @include font($size: 24px, $height: 36px, $weight: 500);
+  }
+}
+
+.footer-navigation {
+  @include media-laptop {
+    @include font($size: 18px, $height: 36px, $weight: 400);
+  }
 }
 
 // HERO
@@ -32,8 +50,18 @@ h1 {
     @include font($size: 12px, $height: 18px, $weight: 400);
   }
 
-  &__text {
-    @include font($size: 12px, $height: 18px, $weight: 400);
+  @include media-laptop {
+    &__text-accent {
+      @include font($size: 18px, $height: 27px);
+    }
+
+    &__title {
+      @include font($size: 48px, $height: 72px);
+    }
+
+    &__text {
+      @include font($size: 18px, $height: 27px, $weight: 400);
+    }
   }
 }
 
@@ -46,6 +74,15 @@ h1 {
   &__text {
     @include font($size: 10px, $height: 15px);
   }
+
+  @include media-laptop {
+    &__input {
+      @include font($size: 18px, $height: 27px);
+    }
+    &__text {
+      @include font($size: 14px, $height: 21px);
+    }
+  }
 }
 
 // SERVICES
@@ -53,6 +90,12 @@ h1 {
 .services {
   &__header {
     @include font($size: 24px, $height: 36px);
+  }
+
+  @include media-laptop {
+    &__header {
+      @include font($size: 36px, $height: 54px);
+    }
   }
 }
 
@@ -94,6 +137,25 @@ h1 {
       @include font($size: 12px, $height: 18px, $weight: 300);
     }
   }
+
+  @include media-laptop {
+    &__header {
+      @include font($size: 36px, $height: 54px);
+    }
+
+    &__link {
+      @include font($size: 24px, $height: 36px);
+    }
+
+    .article {
+      &__header {
+        @include font($size: 24px, $height: 36px);
+      }
+      &__text {
+        @include font($size: 14px, $height: 21px, $weight: 300);
+      }
+    }
+  }
 }
 
 // TEAM
@@ -124,6 +186,12 @@ h1 {
     }
     &__position {
       @include font($size: 18px, $height: 27px);
+    }
+  }
+
+  @include media-laptop {
+    &__text {
+      @include font($size: 36px, $height: 54px);
     }
   }
 }
