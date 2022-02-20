@@ -4,7 +4,8 @@
 @import
   'abstracts/variables',
   'abstracts/mixins',
-  'abstracts/constants';
+  'abstracts/constants',
+  'abstracts/placeholders';
 
 // 2. Vendors
 @import
@@ -17,7 +18,9 @@
   'base/icons';
 
 // 4. Layout-related sections
-
+@import 
+  'layout/wrapper';
+  
 // 5. Components
 
 // 6. Themes
