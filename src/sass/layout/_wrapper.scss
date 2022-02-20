@@ -1,0 +1,12 @@
+.wrapper {
+  max-width: $content-width;
+  margin: auto;
+  padding: 0 10px;
+
+  &_long {
+    padding: 0 15px;
+  }
+  &_short {
+    padding: 0 40px;
+  }
+}
