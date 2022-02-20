@@ -11,7 +11,7 @@
       rel="stylesheet"
     />
     <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="src/sass/style.css" />
@@ -33,7 +33,194 @@
         </nav>
       </div>
     </header>
-    <main></main>
-    <footer></footer>
+    <main class="main">
+      <section class="hero">
+        <div class="wrapper wrapper_long">
+          <h1 class="wrapper_short hero__header">
+            We create beautiful and fast web services
+          </h1>
+          <p class="wrapper_short hero__text-accent">
+            Unhappy with your website?
+          </p>
+          <img class="" src="src/img/hero/heroImage.jpg" alt="" />
+          <p class="wrapper_short hero__title">Story, emotion and purpose</p>
+          <p class="wrapper_short hero__text">
+            We help transform your ideas into real world applications that will
+            outperform your toughest competition and help you achieve your
+            strategic goals in short period of time.
+          </p>
+          <form class="wrapper_short hero__form form" method="post">
+            <span class="form__text">Want us to contact you?</span>
+            <input
+              class="form__input"
+              type="email"
+              name="email"
+              id="user_email"
+            />
+            <button class="form__button">Join</button>
+          </form>
+        </div>
+      </section>
+      <section class="services">
+        <div class="wrapper wrapper_medium">
+          <h2 class="services__header">We offer high demand services</h2>
+          <div class="cards">
+            <div class="card">
+              <h3 class="card__header">UI/UX Design</h3>
+              <div class="icon icon_blue">
+                <span class="material-icons-round"> edit </span>
+              </div>
+              <p class="card__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a
+                metus ac nulla consequat aliquet id quis turpis.
+              </p>
+              <a class="button" href="#">Get started</a>
+            </div>
+            <div class="card">
+              <h3 class="card__header">UI/UX Design</h3>
+              <div class="icon icon_green">
+                <span class="material-icons-round"> code </span>
+              </div>
+              <p class="card__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a
+                metus ac nulla consequat aliquet id quis turpis.
+              </p>
+              <a class="button" href="#">Get started</a>
+            </div>
+            <div class="card">
+              <h3 class="card__header">UI/UX Design</h3>
+              <div class="icon icon_red">
+                <span class="material-icons-round"> format_list_bulleted </span>
+              </div>
+              <p class="card__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a
+                metus ac nulla consequat aliquet id quis turpis.
+              </p>
+              <a class="button" href="#">Get started</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="articles">
+        <div class="wrapper wrapper_long">
+          <h2 class="articles__header">Good design means good business</h2>
+          <div class="layout-2-col">
+            <article class="article">
+              <h3 class="article__header">Smart home dashboard</h3>
+              <p class="article__text">Full stack application</p>
+              <img
+                class="article__image"
+                src="src/img/articles/smarthome.jpg"
+                alt=""
+              />
+            </article>
+            <article class="article">
+              <h3 class="article__header">Onboard application</h3>
+              <p class="article__text">UX/UI design</p>
+              <img
+                class="article__image"
+                src="src/img/articles/onboard.png"
+                alt=""
+              />
+            </article>
+            <article class="article">
+              <h3 class="article__header">Booking system</h3>
+              <p class="article__text">Mobile application</p>
+              <img
+                class="article__image"
+                src="src/img/articles/booking.png"
+                alt=""
+              />
+            </article>
+            <article class="article">
+              <h3 class="article__header">Front End applicati on</h3>
+              <p class="article__text">Juice product homepage</p>
+              <img
+                class="article__image"
+                src="src/img/articles/juice-product.png"
+                alt=""
+              />
+            </article>
+          </div>
+          <a class="articles__link" href="#">see more...</a>
+        </div>
+      </section>
+      <section class="team">
+        <div class="wrapper wrapper_long">
+          <h2 class="team__header">We are chilled and a laidback team</h2>
+          <p class="team__text-accent">Meet the team</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <div class="team__gallery layout-2-col">
+            <div>
+              <img src="src/img/team/person3.png" alt="" />
+            </div>
+            <div>
+              <img src="src/img/team/person1.png" alt="" />
+              <img src="src/img/team/person2.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="testimony">
+        <div class="wrapper wrapper_long">
+          <p class="testimony__text">
+            “Fast and outstanding resutls. Edie understands their customer’s
+            needs. They have a young and talented team.”
+          </p>
+          <div class="testimony-card layout-2-col">
+            <img
+              class="testimony-card__image row"
+              src="src/img/team/person4.png"
+              alt=""
+            />
+            <div class="row">
+              <p class="testimony-card__title">Carlos Tran</p>
+              <p class="testimony-card__position">The Decorate Gatsby</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="wrapper wrapper_short">
+        <div class="layout-3-col">
+          <div class="row">
+            <ul class="footer-navigation">
+              <li>Home</li>
+              <li>Services</li>
+              <li>Our Works</li>
+              <li>Clients</li>
+              <li>Contact</li>
+            </ul>
+          </div>
+          <div class="row">
+            <span class="footer__logo">Edie</span>
+            <div class="footer__social">
+              <a href="#"
+                ><img src="src/img/icons/instagram.svg" alt="" />Instagram</a
+              >
+              <a href="#"
+                ><img src="src/img/icons/linkedin.svg" alt="" />LinkedIn</a
+              >
+              <a href="#"
+                ><img src="src/img/icons/twitter.svg" alt="" />Twitter</a
+              >
+            </div>
+          </div>
+          <div class="row">
+            <form class="footer__form form" method="post">
+              <span class="form__text">Want us to contact you?</span>
+              <input
+                class="form__input"
+                type="email"
+                name="email"
+                id="user_email"
+              />
+              <button class="form__button">Join</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
