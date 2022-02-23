@@ -19,9 +19,13 @@
 
 // 4. Layout-related sections
 @import 
-  'layout/wrapper';
+  'layout/wrapper',
+  'layout/navigation',
+  'layout/header';
   
 // 5. Components
+@import
+  'components/hamburger';
 
 // 6. Themes
 @import
