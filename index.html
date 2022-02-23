@@ -19,18 +19,22 @@
   </head>
   <body>
     <header class="header">
-      <div class="wrapper wrapper_long">
+      <div class="wrapper wrapper_long header-navigation">
         <span class="logo header__logo">Edie</span>
 
         <nav class="navigation">
           <ul class="navigation__list">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Service</a></li>
-            <li><a href="#">Out Works</a></li>
-            <li><a href="#">Clients</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a class="navigation__link" href="#">Home</a></li>
+            <li><a class="navigation__link" href="#">Service</a></li>
+            <li><a class="navigation__link" href="#">Out Works</a></li>
+            <li><a class="navigation__link" href="#">Clients</a></li>
+            <li><a class="navigation__link" href="#">Contact</a></li>
           </ul>
         </nav>
+        <div class="hamburger">
+          <input type="checkbox" />
+          <span class="hamburger__line"></span>
+        </div>
       </div>
     </header>
     <main class="main">
@@ -227,11 +231,38 @@
           <a
             href="https://devchallenges.io/portfolio/Cyber-Kira"
             target="_blank"
-            ><span class="text_highlighted">CyberKira</span></a
+            ><span class="highlighted">CyberKira</span></a
           >
           - devChallenges.io
         </p>
       </div>
     </footer>
+
+    <script>
+      document
+        .querySelector("input[type='checkbox']")
+        .addEventListener("change", () => {
+          document.querySelector(".navigation__list").classList.toggle("show");
+          document.body.classList.toggle("disableScrolling");
+        });
+
+      const header = document.querySelector(".header");
+
+      const myFunction = () => {
+        if (window.pageYOffset > 0) {
+          header.classList.add("sticky");
+          header.classList.add("background");
+          header.classList.add("shrink");
+        } else {
+          header.classList.remove("sticky");
+          header.classList.remove("background");
+          header.classList.remove("shrink");
+        }
+      };
+
+      window.onscroll = function () {
+        myFunction();
+      };
+    </script>
   </body>
 </html>
