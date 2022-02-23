@@ -1,0 +1,51 @@
+%line {
+  position: absolute;
+  display: block;
+  height: 2px;
+  width: 18px;
+
+  border-radius: 1px;
+  background-color: $color-primary;
+  left: calc(50% - 9px);
+}
+
+.hamburger {
+  position: relative;
+  display: flex;
+  justify-content: stretch;
+  align-items: stretch;
+  width: 35px;
+  height: 35px;
+
+  z-index: 1;
+
+  input {
+    width: 100%;
+    height: 100%;
+
+    opacity: 0;
+    z-index: 2;
+  }
+
+  &__line {
+    @extend %line;
+
+    top: calc(50% - 1px);
+  }
+
+  &::before {
+    content: "";
+    @extend %line;
+    top: calc(50% - 6px);
+  }
+
+  &::after {
+    content: "";
+    @extend %line;
+    bottom: calc(50% - 6px);
+  }
+
+  @include media-laptop {
+    display: none;
+  }
+}
