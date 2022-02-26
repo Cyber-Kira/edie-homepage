@@ -21,11 +21,13 @@
 @import 
   'layout/wrapper',
   'layout/navigation',
-  'layout/header';
+  'layout/header',
+  'layout/hero';
   
 // 5. Components
 @import
-  'components/hamburger';
+  'components/hamburger',
+  'components/form';
 
 // 6. Themes
 @import

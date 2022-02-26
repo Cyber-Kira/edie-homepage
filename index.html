@@ -46,7 +46,7 @@
           <p class="wrapper_short hero__text-accent">
             Unhappy with your website?
           </p>
-          <img class="" src="src/img/hero/heroImage.jpg" alt="" />
+          <img class="hero__image" src="src/img/hero/heroImage.jpg" alt="" />
           <p class="wrapper_short hero__title">Story, emotion and purpose</p>
           <p class="wrapper_short hero__text">
             We help transform your ideas into real world applications that will
@@ -55,13 +55,16 @@
           </p>
           <form class="wrapper_short hero__form form" method="post">
             <span class="form__text">Want us to contact you?</span>
-            <input
-              class="form__input"
-              type="email"
-              name="email"
-              id="user_email"
-            />
-            <button class="form__button">Join</button>
+            <div class="form__wrapper">
+              <input
+                placeholder="Email"
+                class="form__input"
+                type="email"
+                name="email"
+                id="user_email"
+              />
+              <button class="form__button">Join</button>
+            </div>
           </form>
         </div>
       </section>

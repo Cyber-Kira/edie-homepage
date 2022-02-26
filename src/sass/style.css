@@ -692,7 +692,7 @@ h1 {
   padding: 0 15px;
 }
 .wrapper_short {
-  padding: 0 40px;
+  padding: 0 30px;
 }
 
 .header-navigation {
@@ -751,11 +751,15 @@ h1 {
   padding: 1.3em 0;
   text-decoration: none;
   text-transform: uppercase;
+  border-bottom: 2px solid transparent;
   color: #333333;
   flex: 1;
   letter-spacing: 1.3px;
   transform: translateX(-150%);
   transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+.navigation__link:hover {
+  color: #2e9cdc;
 }
 @media (min-width: 1110px) {
   .navigation {
@@ -816,7 +820,32 @@ h1 {
 }
 
 .main {
-  padding-top: 119px;
+  padding-top: 100px;
+}
+
+.hero .wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 102px;
+}
+.hero__header {
+  width: 91%;
+}
+.hero__text-accent {
+  order: -1;
+  color: #2e9cdc;
+}
+.hero__image {
+  border-radius: 18px;
+  margin: 15px 0 22px 0;
+}
+.hero__title {
+  width: 80%;
+}
+.hero__text {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  width: 92%;
 }
 
 .hamburger::after, .hamburger::before, .hamburger__line {
@@ -859,6 +888,41 @@ h1 {
   .hamburger {
     display: none;
   }
+}
+
+.form {
+  width: 100%;
+}
+.form__text {
+  display: block;
+  color: #828282;
+  margin-bottom: 5px;
+}
+.form__input {
+  display: block;
+  border: 0;
+  outline: 0;
+  background-color: #f2f2f2;
+  width: 100%;
+  height: 47px;
+  border-radius: 12px;
+  text-indent: 19px;
+}
+.form__input::placeholder {
+  color: #bdbdbd;
+}
+.form__wrapper {
+  position: relative;
+}
+.form__button {
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  border: 0;
+  padding: 11px 20px;
+  border-radius: 12px;
+  background-color: #2e9cdc;
+  color: #fff;
 }
 
 /*# sourceMappingURL=style.css.map */
