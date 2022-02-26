@@ -1,0 +1,31 @@
+.hero {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 102px;
+  }
+
+  &__header {
+    width: 91%;
+  }
+
+  &__text-accent {
+    order: -1;
+    color: $color-accent-primary;
+  }
+
+  &__image {
+    border-radius: 18px;
+    margin: 15px 0 22px 0;
+  }
+
+  &__title {
+    width: 80%;
+  }
+
+  &__text {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 92%;
+  }
+}
