@@ -1,0 +1,32 @@
+.articles {
+  padding: 100px 0;
+
+  &__header {
+    padding: 0 35px;
+    padding-bottom: 12px;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    width: fit-content;
+    color: hsl(202, 71%, 52%);
+    margin: 36px 0;
+
+    span {
+      margin-left: 8px;
+      transform: translateX(-2px);
+    }
+
+    &:hover,
+    &:focus {
+      outline: none;
+      color: hsl(202, 71%, 32%);
+      span {
+        transition: all 0.25s ease-in-out;
+        transform: none;
+      }
+    }
+  }
+}
