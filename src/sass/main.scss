@@ -24,13 +24,15 @@
   'layout/navigation',
   'layout/header',
   'layout/hero',
-  'layout/services';
+  'layout/services',
+  'layout/articles';
   
 // 5. Components
 @import
   'components/hamburger',
   'components/form',
-  'components/card';
+  'components/card',
+  'components/article';
 
 // 6. Themes
 @import
