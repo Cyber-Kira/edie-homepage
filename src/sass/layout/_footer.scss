@@ -1,0 +1,57 @@
+.footer {
+  .wrapper {
+    padding: 0 40px;
+  }
+
+  background-color: #100e1d;
+  color: white;
+
+  &__social {
+    display: flex;
+    gap: 11px;
+    font-size: 0px;
+    padding-bottom: 65px;
+  }
+
+  &__form {
+    padding-bottom: 154px;
+  }
+
+  &__text {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 24px;
+    color: #f2f2f2;
+
+    a {
+      position: relative;
+      text-decoration: none;
+    }
+
+    a::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 1px;
+      width: 100%;
+      background-color: white;
+    }
+
+    .highlighted {
+      color: #f2f2f2;
+    }
+  }
+}
+
+.footer-navigation {
+  padding: 36px 0 64px;
+  a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    width: 100%;
+    padding: 7px 0;
+  }
+}
