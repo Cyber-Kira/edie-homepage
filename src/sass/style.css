@@ -375,6 +375,10 @@ html {
   box-sizing: inherit;
 }
 
+body {
+  color: #333333;
+}
+
 h1 {
   font-style: normal;
   font-weight: 500;
@@ -970,6 +974,28 @@ h1 {
   .team__gallery .width-88 {
     width: auto;
   }
+}
+
+.testimony {
+  padding-bottom: 100px;
+}
+
+.testimony-card {
+  display: flex;
+  padding-top: 27px;
+}
+.testimony-card__image {
+  width: 82px;
+  border-radius: 15px;
+}
+.testimony-card__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 30px;
+}
+.testimony-card__position {
+  color: #828282;
 }
 
 .hamburger::after, .hamburger::before, .hamburger__line {

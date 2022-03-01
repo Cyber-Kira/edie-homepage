@@ -1,0 +1,21 @@
+.testimony {
+  padding-bottom: 100px;
+}
+
+.testimony-card {
+  display: flex;
+  padding-top: 27px;
+  &__image {
+    width: 82px;
+    border-radius: 15px;
+  }
+  &__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 30px;
+  }
+  &__position {
+    color: #828282;
+  }
+}
