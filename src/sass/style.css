@@ -633,8 +633,8 @@ h1 {
 
 .footer__logo {
   font-style: normal;
-  font-weight: 500;
-  font-size: 36px;
+  font-weight: 800;
+  font-size: 34px;
   line-height: 53px;
 }
 .footer__text {
@@ -996,6 +996,57 @@ h1 {
 }
 .testimony-card__position {
   color: #828282;
+}
+
+.footer {
+  background-color: #100e1d;
+  color: white;
+}
+.footer .wrapper {
+  padding: 0 40px;
+}
+.footer__social {
+  display: flex;
+  gap: 11px;
+  font-size: 0px;
+  padding-bottom: 65px;
+}
+.footer__form {
+  padding-bottom: 154px;
+}
+.footer__text {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 24px;
+  color: #f2f2f2;
+}
+.footer__text a {
+  position: relative;
+  text-decoration: none;
+}
+.footer__text a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  width: 100%;
+  background-color: white;
+}
+.footer__text .highlighted {
+  color: #f2f2f2;
+}
+
+.footer-navigation {
+  padding: 36px 0 64px;
+}
+.footer-navigation a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  width: 100%;
+  padding: 7px 0;
 }
 
 .hamburger::after, .hamburger::before, .hamburger__line {

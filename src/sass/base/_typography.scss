@@ -200,7 +200,7 @@ h1 {
 
 .footer {
   &__logo {
-    @include font($size: 36px, $height: 53px);
+    @include font($size: 34px, $height: 53px, $weight: 800);
   }
   &__text {
     @extend %font-footer;
