@@ -854,6 +854,7 @@ h1 {
   top: 0;
   left: 0;
   padding: 19px 0 19px;
+  z-index: 1;
   transition: background 0.35s;
 }
 
@@ -950,6 +951,7 @@ h1 {
   height: 47px;
   border-radius: 12px;
   text-indent: 19px;
+  z-index: -1;
 }
 .form__input::placeholder {
   color: #bdbdbd;

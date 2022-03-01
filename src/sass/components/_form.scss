@@ -16,6 +16,7 @@
     height: 47px;
     border-radius: 12px;
     text-indent: 19px;
+    z-index: -1;
 
     &::placeholder {
       color: hsla(0, 0%, 74%, 1);
