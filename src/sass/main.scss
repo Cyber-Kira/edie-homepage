@@ -15,19 +15,22 @@
 @import
   'base/base',
   'base/typography',
-  'base/icons';
+  'base/icons',
+  'base/buttons';
 
 // 4. Layout-related sections
 @import 
   'layout/wrapper',
   'layout/navigation',
   'layout/header',
-  'layout/hero';
+  'layout/hero',
+  'layout/services';
   
 // 5. Components
 @import
   'components/hamburger',
-  'components/form';
+  'components/form',
+  'components/card';
 
 // 6. Themes
 @import
