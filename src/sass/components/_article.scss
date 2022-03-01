@@ -1,0 +1,20 @@
+.article {
+  display: flex;
+  flex-direction: column;
+  margin-top: 36px;
+
+  &__image {
+    order: -1;
+    border-radius: 25px;
+    margin-bottom: 13px;
+  }
+
+  &__text {
+    color: #828282;
+    order: 0;
+  }
+
+  &__header {
+    order: 1;
+  }
+}
