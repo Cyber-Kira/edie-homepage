@@ -18,11 +18,17 @@
   }
 
   &__header {
-    width: 65%;
+    width: 80%;
+    @include media-laptop {
+      width: 65%;
+    }
   }
 
   &__text {
-    width: 60%;
+    width: 80%;
+    @include media-laptop {
+      width: 60%;
+    }
     margin: 14px 0 36px;
   }
 
@@ -56,8 +62,6 @@
   }
 
   @include media-laptop {
-    padding: 0 165px 100px 165px;
-
     .wrapper {
       flex-wrap: wrap;
       justify-content: space-between;
