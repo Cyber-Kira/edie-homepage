@@ -905,6 +905,35 @@ h1 {
   padding-bottom: 30px;
   width: 92%;
 }
+@media (min-width: 1332px) {
+  .hero {
+    padding-top: 76px;
+    padding-bottom: 98px;
+  }
+  .hero__header {
+    width: 75%;
+  }
+  .hero__text-accent {
+    order: -1;
+    color: #2e9cdc;
+    padding-bottom: 16px;
+  }
+  .hero__image {
+    border-radius: 18px;
+    margin: 42px 0;
+  }
+  .hero__title {
+    width: 65%;
+  }
+  .hero__text {
+    padding-top: 42px;
+    padding-bottom: 42px;
+    width: 62%;
+  }
+  .hero form {
+    width: 59%;
+  }
+}
 
 .services__header {
   margin-bottom: 46px;
@@ -914,6 +943,7 @@ h1 {
   .services__header {
     margin-bottom: 46px;
     padding: 0;
+    width: 30%;
   }
 }
 
@@ -927,10 +957,14 @@ h1 {
 .articles__link {
   display: flex;
   align-items: center;
-  text-decoration: none;
   width: fit-content;
-  color: #2e9cdc;
   margin: 36px 0;
+}
+.articles__link a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #2e9cdc;
 }
 .articles__link span {
   margin-left: 8px;
@@ -951,6 +985,16 @@ h1 {
   .articles__header {
     padding: 0;
     padding-bottom: 12px;
+    width: 40%;
+  }
+  .articles__link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    justify-content: flex-end;
+    transform: translateY(-40px);
+    width: 100%;
+    margin: 0;
   }
 }
 
@@ -971,10 +1015,10 @@ h1 {
   margin-bottom: 7px;
 }
 .team__header {
-  width: 80%;
+  width: 65%;
 }
 .team__text {
-  width: 80%;
+  width: 60%;
   margin: 14px 0 36px;
 }
 .team__image {
@@ -1031,6 +1075,7 @@ h1 {
 @media (min-width: 1332px) {
   .testimony {
     padding: 0 165px 100px 165px;
+    width: 88%;
   }
 }
 
@@ -1093,10 +1138,13 @@ h1 {
 }
 @media (min-width: 1332px) {
   .footer {
-    padding: 0 165px 100px 165px;
+    padding: 0 165px 0 165px;
   }
   .footer .wrapper_short {
     padding: 0;
+  }
+  .footer .row {
+    padding: 36px 0 64px;
   }
 }
 
@@ -1109,6 +1157,14 @@ h1 {
   color: inherit;
   width: 100%;
   padding: 7px 0;
+}
+@media (min-width: 1332px) {
+  .footer-navigation {
+    padding: 0;
+  }
+  .footer-navigation a {
+    padding: 0;
+  }
 }
 
 @media (min-width: 1332px) {
@@ -1264,6 +1320,14 @@ h1 {
 }
 .article__header {
   order: 1;
+}
+@media (min-width: 1332px) {
+  .article:nth-child(2n-1) {
+    padding-top: 176px;
+  }
+  .article__image {
+    margin-bottom: 20px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
