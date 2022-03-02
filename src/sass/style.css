@@ -367,6 +367,14 @@ template {
 
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+:target:before {
+  content: "";
+  display: block;
+  height: 120px;
+  margin: -120px 0 0;
 }
 
 *,
@@ -788,20 +796,56 @@ h1 {
 .navigation__list li:nth-child(0) a {
   transition-delay: 0.2s;
 }
+@media (min-width: 1332px) {
+  .navigation__list li:nth-child(0) a {
+    transition: color 0.3s ease;
+    transition-delay: 0s;
+  }
+}
 .navigation__list li:nth-child(1) a {
   transition-delay: 0.24375s;
+}
+@media (min-width: 1332px) {
+  .navigation__list li:nth-child(1) a {
+    transition: color 0.3s ease;
+    transition-delay: 0s;
+  }
 }
 .navigation__list li:nth-child(2) a {
   transition-delay: 0.2875s;
 }
+@media (min-width: 1332px) {
+  .navigation__list li:nth-child(2) a {
+    transition: color 0.3s ease;
+    transition-delay: 0s;
+  }
+}
 .navigation__list li:nth-child(3) a {
   transition-delay: 0.33125s;
+}
+@media (min-width: 1332px) {
+  .navigation__list li:nth-child(3) a {
+    transition: color 0.3s ease;
+    transition-delay: 0s;
+  }
 }
 .navigation__list li:nth-child(4) a {
   transition-delay: 0.375s;
 }
+@media (min-width: 1332px) {
+  .navigation__list li:nth-child(4) a {
+    transition: color 0.3s ease;
+    transition-delay: 0s;
+  }
+}
 .navigation__list li:nth-child(5) a {
   transition-delay: 0.41875s;
+}
+@media (min-width: 1332px) {
+  .navigation__list li:nth-child(5) a {
+    transition: color 0.3s ease;
+    transition-delay: 0s;
+  }
 }
 .navigation li {
   text-align: center;
@@ -818,7 +862,7 @@ h1 {
   flex: 1;
   letter-spacing: 1.3px;
   transform: translateX(-150%);
-  transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1);
+  transition: transform 0.3s cubic-bezier(0.39, 0.575, 0.565, 1);
 }
 .navigation__link:hover {
   color: #2e9cdc;
@@ -880,6 +924,10 @@ h1 {
   padding: 19px 0 19px;
   z-index: 1;
   transition: background 0.35s;
+}
+.header__logo {
+  text-decoration: none;
+  color: inherit;
 }
 
 .main {
@@ -971,17 +1019,17 @@ h1 {
   text-decoration: none;
   color: #2e9cdc;
 }
+.articles__link a span {
+  margin-left: 8px;
+  transform: translateX(-3px);
+  transition: all 0.25s ease-in-out;
+}
 .articles__link a:hover, .articles__link a:focus {
   outline: none;
   color: #18618c;
 }
 .articles__link a:hover span, .articles__link a:focus span {
-  transition: all 0.25s ease-in-out;
   transform: none;
-}
-.articles__link span {
-  margin-left: 8px;
-  transform: translateX(-2px);
 }
 @media (min-width: 1332px) {
   .articles__header {
@@ -1035,6 +1083,10 @@ h1 {
 }
 .team__image {
   border-radius: 24px;
+  transition: transform 0.3s ease;
+}
+.team__image:hover {
+  transform: scale(1.02);
 }
 .team__image:not(:last-child) {
   margin-bottom: 9px;
@@ -1157,6 +1209,10 @@ h1 {
   color: inherit;
   width: 100%;
   padding: 7px 0;
+  transition: color 0.3s ease;
+}
+.footer-navigation a:hover, .footer-navigation a:focus {
+  color: #2e9cdc;
 }
 @media (min-width: 1332px) {
   .footer-navigation {
@@ -1249,9 +1305,16 @@ h1 {
   border-radius: 12px;
   text-indent: 19px;
   z-index: -1;
+  transition: all 0.2s ease-in;
 }
 .form__input::placeholder {
   color: #bdbdbd;
+}
+.form__input:focus {
+  background-color: #e0e0e0;
+}
+.form__input:focus::placeholder {
+  color: gray;
 }
 .form__wrapper {
   position: relative;
@@ -1265,6 +1328,11 @@ h1 {
   border-radius: 12px;
   background-color: #2e9cdc;
   color: #fff;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in;
+}
+.form__button:hover, .form__button:focus {
+  background-color: #318ec4;
 }
 
 .card {
@@ -1309,10 +1377,13 @@ h1 {
   flex-direction: column;
   margin-top: 36px;
 }
+.article > * {
+  cursor: pointer;
+}
 .article__image {
   order: -1;
   border-radius: 25px;
-  margin-bottom: 13px;
+  padding-bottom: 13px;
 }
 .article__text {
   color: #828282;
@@ -1326,7 +1397,7 @@ h1 {
     padding-top: 176px;
   }
   .article__image {
-    margin-bottom: 20px;
+    padding-bottom: 20px;
   }
 }
 

@@ -17,9 +17,17 @@
     border-radius: 12px;
     text-indent: 19px;
     z-index: -1;
+    transition: all 0.2s ease-in;
 
     &::placeholder {
       color: hsla(0, 0%, 74%, 1);
+    }
+
+    &:focus {
+      background-color: $color-background-dark;
+      &::placeholder {
+        color: hsla(0, 0%, 50%, 1);
+      }
     }
   }
 
@@ -36,5 +44,12 @@
     border-radius: 12px;
     background-color: $color-accent-primary;
     color: #fff;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in;
+
+    &:hover,
+    &:focus {
+      background-color: hsl(202, 60%, 48%);
+    }
   }
 }

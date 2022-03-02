@@ -2,11 +2,14 @@
   display: flex;
   flex-direction: column;
   margin-top: 36px;
+  > * {
+    cursor: pointer;
+  }
 
   &__image {
     order: -1;
     border-radius: 25px;
-    margin-bottom: 13px;
+    padding-bottom: 13px;
   }
 
   &__text {
@@ -23,7 +26,7 @@
       padding-top: 176px;
     }
     &__image {
-      margin-bottom: 20px;
+      padding-bottom: 20px;
     }
   }
 }
