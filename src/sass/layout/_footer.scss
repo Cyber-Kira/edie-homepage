@@ -63,6 +63,11 @@
     color: inherit;
     width: 100%;
     padding: 7px 0;
+    transition: color 0.3s ease;
+    &:hover,
+    &:focus {
+      color: $color-accent-primary;
+    }
   }
 
   @include media-laptop {

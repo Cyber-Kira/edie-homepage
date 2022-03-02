@@ -33,6 +33,13 @@
       li:nth-child(#{$i}) a {
         transition-delay: calc(0.35 * $i / 8 + 0.2) + s;
       }
+
+      @include media-laptop {
+        li:nth-child(#{$i}) a {
+          transition: color 0.3s ease;
+          transition-delay: 0s;
+        }
+      }
     }
   }
 
@@ -54,7 +61,7 @@
 
     transform: translateX(-150%);
 
-    transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1);
+    transition: transform 0.3s cubic-bezier(0.39, 0.575, 0.565, 1);
 
     &:hover {
       color: $color-accent-primary;
