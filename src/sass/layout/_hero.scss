@@ -28,4 +28,38 @@
     padding-bottom: 30px;
     width: 92%;
   }
+
+  @include media-laptop {
+    padding-top: 76px;
+    padding-bottom: 98px;
+
+    &__header {
+      width: 75%;
+    }
+
+    &__text-accent {
+      order: -1;
+      color: $color-accent-primary;
+      padding-bottom: 16px;
+    }
+
+    &__image {
+      border-radius: 18px;
+      margin: 42px 0;
+    }
+
+    &__title {
+      width: 65%;
+    }
+
+    &__text {
+      padding-top: 42px;
+      padding-bottom: 42px;
+      width: 62%;
+    }
+
+    form {
+      width: 59%;
+    }
+  }
 }
