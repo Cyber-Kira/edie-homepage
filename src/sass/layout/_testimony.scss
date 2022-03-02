@@ -1,5 +1,9 @@
 .testimony {
   padding-bottom: 100px;
+
+  @include media-laptop {
+    padding: 0 165px 100px 165px;
+  }
 }
 
 .testimony-card {

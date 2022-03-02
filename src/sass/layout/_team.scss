@@ -53,4 +53,8 @@
       }
     }
   }
+
+  @include media-laptop {
+    padding: 0 165px 100px 165px;
+  }
 }
