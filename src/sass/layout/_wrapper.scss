@@ -4,11 +4,23 @@
 
   &_long {
     padding: 0 10px;
+
+    @include media-laptop {
+      padding: 0;
+    }
   }
   &_medium {
     padding: 0 15px;
+
+    @include media-laptop {
+      padding: 0 113px;
+    }
   }
   &_short {
     padding: 0 30px;
+
+    @include media-laptop {
+      padding: 0 225px;
+    }
   }
 }

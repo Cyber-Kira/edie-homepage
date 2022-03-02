@@ -43,6 +43,14 @@
       color: #f2f2f2;
     }
   }
+
+  @include media-laptop {
+    padding: 0 165px 100px 165px;
+
+    .wrapper_short {
+      padding: 0;
+    }
+  }
 }
 
 .footer-navigation {

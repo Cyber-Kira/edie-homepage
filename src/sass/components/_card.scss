@@ -31,4 +31,10 @@
   &__header {
     margin: 35px 0 24px;
   }
+
+  @include media-laptop {
+    & {
+      padding: 49px 0;
+    }
+  }
 }
