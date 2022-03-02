@@ -9,10 +9,15 @@
   &__link {
     display: flex;
     align-items: center;
-    text-decoration: none;
     width: fit-content;
-    color: hsl(202, 71%, 52%);
     margin: 36px 0;
+
+    a {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: hsl(202, 71%, 52%);
+    }
 
     span {
       margin-left: 8px;
@@ -36,6 +41,17 @@
     &__header {
       padding: 0;
       padding-bottom: 12px;
+      width: 40%;
+    }
+
+    &__link {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      justify-content: flex-end;
+      transform: translateY(-40px);
+      width: 100%;
+      margin: 0;
     }
   }
 }

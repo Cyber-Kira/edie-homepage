@@ -45,10 +45,14 @@
   }
 
   @include media-laptop {
-    padding: 0 165px 100px 165px;
+    padding: 0 165px 0 165px;
 
     .wrapper_short {
       padding: 0;
+    }
+
+    .row {
+      padding: 36px 0 64px;
     }
   }
 }
@@ -61,5 +65,12 @@
     color: inherit;
     width: 100%;
     padding: 7px 0;
+  }
+
+  @include media-laptop {
+    padding: 0;
+    a {
+      padding: 0;
+    }
   }
 }
