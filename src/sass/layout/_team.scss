@@ -6,6 +6,11 @@
     flex-direction: column;
   }
 
+  &__content {
+    display: flex;
+    flex-direction: column;
+  }
+
   &__text-accent {
     order: -1;
     color: #eb5757;
@@ -47,14 +52,29 @@
 
     .width-88 {
       width: 88%;
-
-      @include media-laptop {
-        width: auto;
-      }
     }
   }
 
   @include media-laptop {
     padding: 0 165px 100px 165px;
+
+    .wrapper {
+      flex-wrap: wrap;
+      justify-content: space-between;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    &__content {
+      flex-basis: 45%;
+    }
+
+    &__gallery {
+      flex-basis: 55%;
+    }
+
+    .width-88 {
+      width: auto;
+    }
   }
 }

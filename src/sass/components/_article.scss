@@ -17,4 +17,10 @@
   &__header {
     order: 1;
   }
+
+  // @include media-laptop {
+  //   &:nth-child(2n - 1) {
+  //     padding-top: 176px;
+  //   }
+  // }
 }
