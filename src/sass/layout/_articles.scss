@@ -17,21 +17,21 @@
       align-items: center;
       text-decoration: none;
       color: hsl(202, 71%, 52%);
+
+      &:hover,
+      &:focus {
+        outline: none;
+        color: hsl(202, 71%, 32%);
+        span {
+          transition: all 0.25s ease-in-out;
+          transform: none;
+        }
+      }
     }
 
     span {
       margin-left: 8px;
       transform: translateX(-2px);
-    }
-
-    &:hover,
-    &:focus {
-      outline: none;
-      color: hsl(202, 71%, 32%);
-      span {
-        transition: all 0.25s ease-in-out;
-        transform: none;
-      }
     }
   }
 
