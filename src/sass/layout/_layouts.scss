@@ -1,0 +1,11 @@
+.layout-3-col {
+  @include media-laptop {
+    @include columns(30%);
+  }
+}
+
+.layout-2-col {
+  @include media-laptop {
+    @include columns(49.5%);
+  }
+}
